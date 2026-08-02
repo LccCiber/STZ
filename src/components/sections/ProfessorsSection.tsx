@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { professorTrustPoints } from "@/data/academy";
+import { academy, professorTrustPoints } from "@/data/academy";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -38,11 +38,8 @@ export function ProfessorsSection() {
               Você não entra apenas em uma aula. Entra em um ambiente onde a equipe corrige,
               orienta e organiza o ritmo para transformar insegurança em evolução consistente.
             </p>
-            <ButtonLink
-              href={buildWhatsAppUrl("Ola! Quero saber quem sao os professores da SZT Torre e qual modalidade combina comigo.")}
-              external
-            >
-              Falar com a equipe
+            <ButtonLink href={academy.community} variant="secondary" external>
+              Venha falar com o grupo
             </ButtonLink>
           </Reveal>
         </div>
