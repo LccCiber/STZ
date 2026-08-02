@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Info } from "lucide-react";
 import { modalities } from "@/data/academy";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Reveal } from "@/components/ui/Reveal";
@@ -18,7 +17,7 @@ export function ModalitiesSection() {
                 Uma casa de combate. <span>Varias formas de evoluir.</span>
               </>
             }
-            text="Modalidades encontradas nos perfis publicos da SZT Torre e Extreme Elite Fight. Antes da publicacao final, confirme quais turmas estao ativas e seus horarios."
+              text="Encontre a modalidade que combina com seu objetivo, seja condicionamento, defesa pessoal, qualidade de vida ou evolução competitiva."
           />
         </Reveal>
         <div className="modalities-grid">
@@ -30,10 +29,6 @@ export function ModalitiesSection() {
               <div className="modality-body">
                 <p>{modality.audience}</p>
                 <h3>{modality.title}</h3>
-                <span className="status-pill">
-                  <Info aria-hidden="true" size={15} />
-                  {modality.status}
-                </span>
                 <p>{modality.description}</p>
                 <ButtonLink
                   href={buildWhatsAppUrl(`Ola! Gostaria de informacoes sobre ${modality.title} na SZT Torre.`)}
