@@ -19,7 +19,7 @@ export const academy = {
   unit: "Torre, Joao Pessoa - PB",
   fullLocation: "SZT Torre - South Zone Team - Torre, Joao Pessoa - PB",
   aliases: ["South Zone Team Torre", "Extreme Elite Fight / SZT Torre", "Casa do Flow"],
-  address: "Endereco completo a confirmar",
+  address: "Bairro da Torre, João Pessoa - PB",
   instagram: "https://www.instagram.com/szttorre/",
   secondaryInstagram: "https://www.instagram.com/extreme_elite_fight/",
   mapsQuery: "SZT Torre South Zone Team Joao Pessoa PB",
@@ -28,20 +28,18 @@ export const academy = {
     defaultMessage:
       "Ola! Conheci a SZT Torre pelo site e gostaria de agendar minha primeira aula experimental.",
   },
-  hours: "Horario geral encontrado: segunda a sexta, das 6h as 21h. Horarios por modalidade a confirmar.",
-  parking: "Informacao sobre estacionamento a confirmar",
+  hours: "Consulte os horários de cada modalidade diretamente com a equipe.",
+  parking: "",
 };
 
 export const navItems: NavItem[] = [
-  { label: "Inicio", href: "#inicio" },
+  { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
-  { label: "Historia", href: "#historia" },
   { label: "Modalidades", href: "#modalidades" },
-  { label: "Beneficios", href: "#beneficios" },
+  { label: "Benefícios", href: "#beneficios" },
   { label: "Estrutura", href: "#estrutura" },
   { label: "Professores", href: "#professores" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Localizacao", href: "#localizacao" },
+  { label: "Localização", href: "#localizacao" },
 ];
 
 export const historyPoints = [
