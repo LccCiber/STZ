@@ -12,7 +12,7 @@ export function FinalCtaSection() {
           maneira de desenvolver seu corpo, sua confianca e sua disciplina.
         </p>
         <div className="final-actions">
-          <ButtonLink href={buildWhatsAppUrl()} external>
+          <ButtonLink href={buildWhatsAppUrl()} variant="secondary" external>
             Quero minha aula experimental
           </ButtonLink>
           <ButtonLink
