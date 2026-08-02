@@ -20,7 +20,7 @@ export function LocationSection() {
                 SZT Torre. <span>João Pessoa.</span>
               </>
             }
-            text="Treine com a South Zone Team no bairro da Torre. Fale com a equipe para receber a localização e o horário ideal para sua modalidade."
+            text="Treine com a South Zone Team no bairro da Torre. Veja o endereço, abra a rota no Google Maps e fale com a equipe para confirmar o melhor horário."
           />
           <div className="location-list">
             <p>
