@@ -14,13 +14,13 @@ export function LocationSection() {
       <div className="container location-grid">
         <Reveal>
           <SectionHeading
-            eyebrow="Localizacao"
+            eyebrow="Localização"
             title={
               <>
-                SZT Torre. <span>Joao Pessoa.</span>
+                SZT Torre. <span>João Pessoa.</span>
               </>
             }
-            text="O resumo confirma a unidade no bairro da Torre, mas o endereco completo e os horarios de cada modalidade ainda precisam ser validados com o responsavel."
+            text="Treine com a South Zone Team no bairro da Torre. Fale com a equipe para receber a localização e o horário ideal para sua modalidade."
           />
           <div className="location-list">
             <p>
@@ -28,7 +28,6 @@ export function LocationSection() {
               {academy.address}
             </p>
             <p>{academy.hours}</p>
-            <p>{academy.parking}</p>
           </div>
           <div className="location-actions">
             <ButtonLink href={mapsUrl} variant="secondary" external>
