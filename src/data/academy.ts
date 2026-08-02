@@ -22,6 +22,7 @@ export const academy = {
   address: "Av. Min. José Américo de Almeida, 196 - Torre, João Pessoa - PB, 58040-911",
   instagram: "https://www.instagram.com/szttorre/",
   secondaryInstagram: "https://www.instagram.com/extreme_elite_fight/",
+  community: "https://chat.whatsapp.com/BnTDcmnE6Tk58K5eSbEzIY",
   mapsQuery: "Av. Min. José Américo de Almeida, 196, Torre, João Pessoa, PB, 58040-911",
   whatsapp: {
     number: "5583987673230",
