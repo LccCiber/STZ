@@ -19,29 +19,33 @@ export const academy = {
   unit: "Torre, Joao Pessoa - PB",
   fullLocation: "SZT Torre - South Zone Team - Torre, Joao Pessoa - PB",
   aliases: ["South Zone Team Torre", "Extreme Elite Fight / SZT Torre", "Casa do Flow"],
-  address: "Endereco completo a confirmar",
+  address: "Av. Min. José Américo de Almeida, 196 - Torre, João Pessoa - PB, 58040-911",
   instagram: "https://www.instagram.com/szttorre/",
   secondaryInstagram: "https://www.instagram.com/extreme_elite_fight/",
-  mapsQuery: "SZT Torre South Zone Team Joao Pessoa PB",
+  community: "https://chat.whatsapp.com/BnTDcmnE6Tk58K5eSbEzIY",
+  mapsQuery: "Av. Min. José Américo de Almeida, 196, Torre, João Pessoa, PB, 58040-911",
   whatsapp: {
-    number: "",
+    number: "5583987673230",
     defaultMessage:
       "Ola! Conheci a SZT Torre pelo site e gostaria de agendar minha primeira aula experimental.",
   },
-  hours: "Horario geral encontrado: segunda a sexta, das 6h as 21h. Horarios por modalidade a confirmar.",
-  parking: "Informacao sobre estacionamento a confirmar",
+  hours: "Consulte os horários de cada modalidade diretamente com a equipe.",
+  parking: "",
+  contacts: [
+    { name: "Professor Buba", graduation: "Faixa-preta", phone: "5583987673230" },
+    { name: "Professor Abuh", graduation: "Faixa-preta", phone: "5583993960193" },
+    { name: "Cebola", graduation: "Faixa-roxa", phone: "5583987089813" },
+  ],
 };
 
 export const navItems: NavItem[] = [
-  { label: "Inicio", href: "#inicio" },
+  { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
-  { label: "Historia", href: "#historia" },
   { label: "Modalidades", href: "#modalidades" },
-  { label: "Beneficios", href: "#beneficios" },
+  { label: "Benefícios", href: "#beneficios" },
   { label: "Estrutura", href: "#estrutura" },
   { label: "Professores", href: "#professores" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Localizacao", href: "#localizacao" },
+  { label: "Localização", href: "#localizacao" },
 ];
 
 export const historyPoints = [
@@ -178,26 +182,29 @@ export const processSteps = [
   "Compareca para realizar sua aula experimental",
 ];
 
-export const professorPlaceholders = [
+export const professors = [
   {
-    name: "Professor responsavel",
-    role: "Nome e graduacao a confirmar",
+    name: "Professor Buba",
+    role: "Faixa-preta",
     details:
-      "Espaco preparado para apresentar quem conduz a unidade, sua graduacao, metodologia, especialidades e historia dentro da South Zone Team.",
+      "Professor responsável e contato da equipe para orientar novos alunos, apresentar as modalidades e organizar a primeira experiência no tatame.",
+    phone: "5583987673230",
     icon: Trophy,
   },
   {
-    name: "Equipe tecnica",
-    role: "Professores e auxiliares a confirmar",
+    name: "Professor Abuh",
+    role: "Faixa-preta",
     details:
-      "Bloco pensado para vender seguranca: acompanhamento de perto, correcao tecnica, orientacao para iniciantes e treino adaptado ao objetivo do aluno.",
+      "Experiência e acompanhamento técnico para desenvolver fundamentos, disciplina e evolução consistente em cada etapa do treino.",
+    phone: "5583993960193",
     icon: Dumbbell,
   },
   {
-    name: "Instrutores por modalidade",
-    role: "Modalidades e horarios a confirmar",
+    name: "Cebola",
+    role: "Faixa-roxa",
     details:
-      "Quando a academia enviar os dados, aqui entram os responsaveis por Jiu-Jitsu, Muay Thai, MMA, Sanda, Sipalki-do, defesa pessoal e turmas infantis.",
+      "Parte da equipe responsável pelo suporte aos alunos e pela construção de um ambiente de treino técnico, respeitoso e acolhedor.",
+    phone: "5583987089813",
     icon: Baby,
   },
 ];

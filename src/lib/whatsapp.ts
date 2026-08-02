@@ -1,7 +1,10 @@
 import { academy } from "@/data/academy";
 
-export function buildWhatsAppUrl(message = academy.whatsapp.defaultMessage) {
-  const phone = academy.whatsapp.number.replace(/\D/g, "");
+export function buildWhatsAppUrl(
+  message = academy.whatsapp.defaultMessage,
+  phoneNumber = academy.whatsapp.number,
+) {
+  const phone = phoneNumber.replace(/\D/g, "");
   const text = encodeURIComponent(message);
 
   if (!phone) {

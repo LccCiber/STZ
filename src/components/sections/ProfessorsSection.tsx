@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { professorPlaceholders, professorTrustPoints } from "@/data/academy";
+import { academy, professorTrustPoints } from "@/data/academy";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ProfessorsCarousel } from "@/components/sections/ProfessorsCarousel";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export function ProfessorsSection() {
@@ -17,7 +18,7 @@ export function ProfessorsSection() {
                 Quem puxa o ritmo, <span>guia sua evolucao.</span>
               </>
             }
-            text="A apresentacao da equipe foi pensada para vender seguranca, tecnica e acompanhamento. Assim que nomes, graduacoes e fotos oficiais forem enviados, os cards ficam prontos para publicacao final."
+            text="Acompanhamento técnico, atenção aos fundamentos e respeito ao ritmo de cada aluno desde o primeiro contato com o tatame."
           />
         </Reveal>
 
@@ -34,15 +35,11 @@ export function ProfessorsSection() {
             <p className="eyebrow">Metodo e acompanhamento</p>
             <h3>Treinar bem comeca por ser bem orientado.</h3>
             <p>
-              O aluno nao compra apenas uma aula. Ele entra em um ambiente onde alguem corrige,
-              orienta, organiza o ritmo e ajuda a transformar inseguranca em evolucao. Essa e a
-              promessa que a pagina comunica ate os dados oficiais dos professores entrarem.
+              Você não entra apenas em uma aula. Entra em um ambiente onde a equipe corrige,
+              orienta e organiza o ritmo para transformar insegurança em evolução consistente.
             </p>
-            <ButtonLink
-              href={buildWhatsAppUrl("Ola! Quero saber quem sao os professores da SZT Torre e qual modalidade combina comigo.")}
-              external
-            >
-              Falar com a equipe
+            <ButtonLink href={academy.community} variant="secondary" external>
+              Venha falar com o grupo
             </ButtonLink>
           </Reveal>
         </div>
@@ -60,22 +57,9 @@ export function ProfessorsSection() {
           })}
         </div>
 
-        <div className="professor-grid">
-          {professorPlaceholders.map((professor, index) => {
-            const Icon = professor.icon;
-            return (
-              <Reveal className="professor-card" delay={index * 0.06} key={professor.name}>
-                <div className="professor-icon">
-                  <Icon aria-hidden="true" />
-                </div>
-                <p>{professor.role}</p>
-                <h3>{professor.name}</h3>
-                <span>Pronto para dados oficiais</span>
-                <p>{professor.details}</p>
-              </Reveal>
-            );
-          })}
-        </div>
+        <Reveal>
+          <ProfessorsCarousel />
+        </Reveal>
       </div>
     </section>
   );

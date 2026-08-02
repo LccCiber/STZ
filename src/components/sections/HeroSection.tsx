@@ -21,14 +21,14 @@ export function HeroSection() {
         <Reveal>
           <p className="hero-kicker">
             <span />
-            SZT Torre • South Zone Team • Joao Pessoa
+            SZT Torre • South Zone Team • João Pessoa
           </p>
           <h1>
             Agende sua aula <strong>experimental.</strong>
           </h1>
           <p className="hero-copy">
             Venha sentir o ritmo da SZT Torre, conhecer a energia do treino e descobrir qual
-            modalidade combina com seu objetivo. Nao precisa ter experiencia para comecar.
+            modalidade combina com seu objetivo. Você não precisa ter experiência para começar.
           </p>
           <div className="hero-actions">
             <ButtonLink href={buildWhatsAppUrl()} external>
@@ -62,7 +62,7 @@ export function HeroSection() {
               streetAddress: academy.address,
             },
             areaServed: "Torre, Joao Pessoa - PB",
-            url: "https://example.com",
+            url: "https://szt-south-zone-team.vercel.app",
             sport: ["Jiu-Jitsu", "Muay Thai", "MMA", "Sanda", "Sipalki-do", "Defesa pessoal"],
           }),
         }}
