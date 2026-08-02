@@ -10,13 +10,13 @@ export function Footer() {
         <div className="footer-brand">
           <Image src="/logos/szt-logo.jpg" alt="Logotipo SZT" width={58} height={58} />
           <p>
-            SZT Torre - South Zone Team. Artes marciais, disciplina e evolucao dentro e fora
+            SZT Torre - South Zone Team. Artes marciais, disciplina e evolução dentro e fora
             do treino.
           </p>
         </div>
 
         <div>
-          <h3>Navegacao</h3>
+          <h3>Navegação</h3>
           <ul>
             {navItems.map((item) => (
               <li key={item.href}>
@@ -53,8 +53,7 @@ export function Footer() {
                 Instagram @extreme_elite_fight
               </a>
             </li>
-            <li>{academy.address}</li>
-            <li>{academy.hours}</li>
+            <li>{academy.unit}</li>
             <li>
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -72,10 +71,7 @@ export function Footer() {
 
       <div className="container footer-bottom">
         <span>© 2026 SZT Torre - South Zone Team. Todos os direitos reservados.</span>
-        <span>
-          <Link href="#privacidade">Politica de Privacidade</Link>
-          <Link href="#termos">Termos de Uso</Link>
-        </span>
+        <span>Disciplina • Respeito • Evolução</span>
       </div>
     </footer>
   );
