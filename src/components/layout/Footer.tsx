@@ -38,11 +38,20 @@ export function Footer() {
         <div>
           <h3>Contato</h3>
           <ul>
-            <li>
-              <a href={buildWhatsAppUrl()} target="_blank" rel="noreferrer">
-                WhatsApp
-              </a>
-            </li>
+            {academy.contacts.map((contact) => (
+              <li key={contact.phone}>
+                <a
+                  href={buildWhatsAppUrl(
+                    `Olá, ${contact.name}! Conheci a SZT Torre pelo site e gostaria de informações.`,
+                    contact.phone,
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  WhatsApp — {contact.name}
+                </a>
+              </li>
+            ))}
             <li>
               <a href={academy.instagram} target="_blank" rel="noreferrer">
                 Instagram @szttorre
