@@ -28,13 +28,13 @@ export function GallerySection() {
       <div className="container">
         <Reveal>
           <SectionHeading
-            eyebrow="Fotos do local e do treino"
+            eyebrow="Dentro do tatame"
             title={
               <>
-                O visitante precisa sentir o clima <span>antes de pisar no tatame.</span>
+                Energia, técnica e evolução <span>em cada treino.</span>
               </>
             }
-            text="Usei as fotos que voce enviou para criar uma galeria de marketing: intensidade, detalhe, competicao, turma adulta e proposta infantil. Quando chegarem fotos reais da fachada, recepcao e estrutura interna, elas entram aqui."
+            text="Conheça um pouco da intensidade dos treinos, da parceria entre os alunos e da cultura que move a South Zone Team."
           />
         </Reveal>
         <div className="gallery-grid">
